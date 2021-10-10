@@ -1,0 +1,326 @@
+price_doc, sale price (this is the target variable),id, transaction id
+id, transaction id,timestamp, date of transaction
+timestamp, date of transaction,full_sq," total area in square meters, including loggias, balconies and other non-residential areas"
+full_sq," total area in square meters, including loggias, balconies and other non-residential areas",life_sq," living area in square meters, excluding loggias, balconies and other non-residential areas"
+life_sq," living area in square meters, excluding loggias, balconies and other non-residential areas",floor," for apartments, floor of the building"
+floor," for apartments, floor of the building",max_floor, number of floors in the building
+max_floor, number of floors in the building,material, wall material
+material, wall material,build_year, year built
+build_year, year built,num_room, number of living rooms
+num_room, number of living rooms,kitch_sq, kitchen area
+kitch_sq, kitchen area,state, apartment condition
+state, apartment condition,product_type, owner-occupier purchase or investment
+product_type, owner-occupier purchase or investment,sub_area, name of the district
+sub_area, name of the district,area_m,"Area mun. area, sq.m."
+full_all, subarea population,raion_popul,Number of municipality population. district
+"male_f, female_f", subarea population by gender,green_zone_part,Proportion of area of ​​greenery in the total area
+young_*, population younger than working age,indust_part,Share of industrial zones in area of ​​the total area
+work_*, working-age population,children_preschool,Number of pre-school age population
+ekder_*, retirement-age population,preschool_quota,Number of seats in pre-school organizations
+n_m_{all|male|female}, population between n and m years old,preschool_education_centers_raion,Number of pre-school  institutions
+build_count_*, buildings in the subarea by construction type or year,children_school,Population of school-age children
+x_count_500, the number of x within 500m of the property,school_quota,Number of high school seats in area
+x_part_500, the share of x within 500m of the property,school_education_centers_raion,Number of  high school institutions
+_sqm_, square meters,school_education_centers_top_20_raion,Number of high schools of the top 20 best schools in Moscow
+cafe_count_d_price_p, number of cafes within d meters of the property that have an average bill under p RUB,hospital_beds_raion,Number of hospital beds for the district
+trc_, shopping malls,healthcare_centers_raion,Number of healthcare centers in district
+prom_, industrial zones,university_top_20_raion,Number of higher education institutions in the top ten ranking of the Federal rank
+green_, green zones,sport_objects_raion,Number of higher education institutions
+metro_, subway,additional_education_raion,Number of additional education organizations
+_avto_, distances by car,culture_objects_top_25,"Presence of the key objects of cultural heritage (significant objects for the level of the RF constituent entities, city)"
+mkad_, Moscow Circle Auto Road,culture_objects_top_25_raion,Number of  objects of cultural heritage
+ttk_, Third Transport Ring,shopping_centers_raion,Number of malls and shopping centres in district
+sadovoe_, Garden Ring,office_raion,Number of malls and shopping centres in district
+bulvar_ring_, Boulevard Ring,thermal_power_plant_raion,Presence of thermal power station in district
+kremlin_, City center,incineration_raion,Presence of incinerators
+zd_vokzaly_, Train station,oil_chemistry_raion,Presence of dirty industries
+oil_chemistry_, Dirty industry,radiation_raion,Presence of radioactive waste disposal
+ts_, Power plant,railroad_terminal_raion,Presence of the railroad terminal in district
+area_m,"Area mun. area, sq.m.",big_market_raion,Presence of large grocery / wholesale markets
+raion_popul,Number of municipality population. district,nuclear_reactor_raion,Presence of existing nuclear reactors
+green_zone_part,Proportion of area of ​​greenery in the total area,detention_facility_raion,"Presence of detention centers, prisons"
+indust_part,Share of industrial zones in area of ​​the total area,full_all, subarea population
+children_preschool,Number of pre-school age population,male_f,Male population
+preschool_quota,Number of seats in pre-school organizations,female_f,Female population
+preschool_education_centers_raion,Number of pre-school  institutions,young_all,Population younger than working age
+children_school,Population of school-age children,young_male,Male population younger than working age 
+school_quota,Number of high school seats in area,young_female,Feale population younger than working age 
+school_education_centers_raion,Number of  high school institutions,work_all,Working-age population
+school_education_centers_top_20_raion,Number of high schools of the top 20 best schools in Moscow,work_male,Male working-age population
+hospital_beds_raion,Number of hospital beds for the district,work_female,Female working-age population
+healthcare_centers_raion,Number of healthcare centers in district,ekder_all,Population older than  working age
+university_top_20_raion,Number of higher education institutions in the top ten ranking of the Federal rank,ekder_male,Male population older than  working age
+sport_objects_raion,Number of higher education institutions,ekder_female,Female population older than  working age
+additional_education_raion,Number of additional education organizations,0_6_all,Population aged 0-6
+culture_objects_top_25,"Presence of the key objects of cultural heritage (significant objects for the level of the RF constituent entities, city)",0_6_male,Male population aged 0-7
+culture_objects_top_25_raion,Number of  objects of cultural heritage,0_6_female,Female population aged 0-8
+shopping_centers_raion,Number of malls and shopping centres in district,7_14_all,Population aged  7-14
+office_raion,Number of malls and shopping centres in district,7_14_male,Male population aged 7-14
+thermal_power_plant_raion,Presence of thermal power station in district,7_14_female,Female population aged 7-14
+incineration_raion,Presence of incinerators,0_17_all,Population aged 0-17
+oil_chemistry_raion,Presence of dirty industries,0_17_male,Male population aged 0-17
+radiation_raion,Presence of radioactive waste disposal,0_17_female,Female population aged 0-17
+railroad_terminal_raion,Presence of the railroad terminal in district,16_29_all,Population aged 16-19
+big_market_raion,Presence of large grocery / wholesale markets,16_29_male,Male population aged 16-19
+nuclear_reactor_raion,Presence of existing nuclear reactors,16_29_female,Female population aged 16-19
+detention_facility_raion,"Presence of detention centers, prisons",0_13_all,Population aged 0-13
+full_all,Total number of  population in the municipality,0_13_male,Male population aged 0-13
+male_f,Male population,0_13_female,Female population aged 0-13
+female_f,Female population,raion_build_count_with_material_info,Number of building with material info in district
+young_all,Population younger than working age,build_count_block,Share of block buildings
+young_male,Male population younger than working age ,build_count_wood,Share of wood buildings
+young_female,Feale population younger than working age ,build_count_frame,Share of frame buildings
+work_all,Working-age population,build_count_brick,Share of brick buildings
+work_male,Male working-age population,build_count_monolith,Share of monolith buildings
+work_female,Female working-age population,build_count_panel,Share of panel buildings
+ekder_all,Population older than  working age,build_count_foam,Share of foam buildings
+ekder_male,Male population older than  working age,build_count_slag,Share of slag buildings
+ekder_female,Female population older than  working age,build_count_mix,Share of mixed buildings
+0_6_all,Population aged 0-6,raion_build_count_with_builddate_info,Number of building with build year info in district
+0_6_male,Male population aged 0-7,build_count_before_1920,Share of before_1920 buildings
+0_6_female,Female population aged 0-8,build_count_1921-1945,Share of 1921-1945 buildings
+7_14_all,Population aged  7-14,build_count_1946-1970,Share of 1946-1970 buildings
+7_14_male,Male population aged 7-14,build_count_1971-1995,Share of 1971-1995 buildings
+7_14_female,Female population aged 7-14,build_count_after_1995,Share of after_1995 buildings
+0_17_all,Population aged 0-17,ID_metro,#N/D
+0_17_male,Male population aged 0-17,metro_min_avto,"Time to subway by car, min."
+0_17_female,Female population aged 0-17,metro_km_avto,"Distance to subway by car, km"
+16_29_all,Population aged 16-19,metro_min_walk,Time to metro by foot
+16_29_male,Male population aged 16-19,metro_km_walk,"Distance to the metro, km"
+16_29_female,Female population aged 16-19,kindergarten_km,Distance to kindergarten
+0_13_all,Population aged 0-13,school_km,Distance to high school 
+0_13_male,Male population aged 0-13,park_km,Distance to park
+0_13_female,Female population aged 0-13,green_zone_km,Distance to green zone
+raion_build_count_with_material_info,Number of building with material info in district,industrial_km,#N/D
+build_count_block,Share of block buildings,water_treatment_km,Distance to water treatment
+build_count_wood,Share of wood buildings,cemetery_km,Distance to the cemetery
+build_count_frame,Share of frame buildings,incineration_km,Distance to the incineration
+build_count_brick,Share of brick buildings,railroad_station_walk_km,Distance to the railroad station (walk)
+build_count_monolith,Share of monolith buildings,railroad_station_walk_min,Time to the railroad station (walk)
+build_count_panel,Share of panel buildings,ID_railroad_station_walk,Nearest railroad station id (walk)
+build_count_foam,Share of foam buildings,railroad_station_avto_km,Distance to the railroad station (avto)
+build_count_slag,Share of slag buildings,railroad_station_avto_min,Time to the railroad station (avto)
+build_count_mix,Share of mixed buildings,ID_railroad_station_avto,Nearest railroad station id (avto)
+raion_build_count_with_builddate_info,Number of building with build year info in district,public_transport_station_km,Distance to the public transport station (walk)
+build_count_before_1920,Share of before_1920 buildings,public_transport_station_min_walk,Time to the public transport station (walk)
+build_count_1921-1945,Share of 1921-1945 buildings,water_km,Distance to the water reservoir / river
+build_count_1946-1970,Share of 1946-1970 buildings,water_1line,First line to the river (150 m)
+build_count_1971-1995,Share of 1971-1995 buildings,mkad_km,Distance to MKAD (Moscow Circle Auto Road)
+build_count_after_1995,Share of after_1995 buildings,ttk_km,Distance to the TTC (Third Transport Ring)
+7_14_male,Male population aged 7-14,sadovoe_km,Distance to the Garden Ring
+7_14_female,Female population aged 7-14,bulvar_ring_km,The distance to the Boulevard Ring
+0_17_all,Population aged 0-17,kremlin_km,Distance to the city center (Kremlin)
+0_17_male,Male population aged 0-17,big_road1_km,Distance to Nearest major road
+0_17_female,Female population aged 0-17,ID_big_road1,Nearest big road id
+16_29_all,Population aged 16-19,big_road1_1line,"First line to the road (100 m for highwys, 250 m to MKAD)"
+16_29_male,Male population aged 16-19,big_road2_km,The distance to next distant major road
+16_29_female,Female population aged 16-19,ID_big_road2,2nd nearest big road id
+0_13_all,Population aged 0-13,railroad_km,Distance to the railway / Moscow Central Ring / open areas Underground
+0_13_male,Male population aged 0-13,railroad_1line,First line to the railway (100 m)
+0_13_female,Female population aged 0-13,zd_vokzaly_avto_km,Distance to train station
+metro_min_avto,"Time to subway by car, min.",ID_railroad_terminal,Nearest railroad terminal id
+metro_km_avto,"Distance to subway by car, km",bus_terminal_avto_km,Distance to bus terminal (avto)
+metro_min_walk,Time to metro by foot,ID_bus_terminal,Nearest bus terminal id
+metro_km_walk,"Distance to the metro, km",oil_chemistry_km,Distance to dirty industries
+kindergarten_km,Distance to kindergarten,nuclear_reactor_km,Distance to nuclear reactor
+school_km,Distance to high school ,radiation_km,Distance to burial of radioactive waste
+park_km,Distance to park,power_transmission_line_km,Distance to power transmission line
+green_zone_km,Distance to green zone,thermal_power_plant_km,Distance to thermal power plant
+industrial_zone_km,Distance to industrial zone,ts_km,Distance to power station
+water_treatment_km,Distance to water treatment,big_market_km,Distance to grocery / wholesale markets
+cemetery_km,Distance to the cemetery,market_shop_km,Distance to markets and department stores
+incineration_km,Distance to the incineration,fitness_km,Distance to fitness
+railroad_station_walk_km,Distance to the railroad station (walk),swim_pool_km,Distance to swimming pool
+railroad_station_walk_min,Time to the railroad station (walk),ice_rink_km,Distance to ice palace
+ID_railroad_station_walk,Nearest railroad station id (walk),stadium_km,Distance to stadium
+railroad_station_avto_km,Distance to the railroad station (avto),basketball_km,Distance to the basketball courts
+railroad_station_avto_min,Time to the railroad station (avto),hospice_morgue_km,Distance to hospice/morgue
+ID_railroad_station_avto,Nearest railroad station id (avto),detention_facility_km,Distance to detention facility
+public_transport_station_km,Distance to the public transport station (walk),public_healthcare_km,Distance to public healthcare
+public_transport_station_min_walk,Time to the public transport station (walk),university_km,Distance to universities
+water_km,Distance to the water reservoir / river,workplaces_km,Distance to workplaces
+water_1line,First line to the river (150 m),shopping_centers_km,Distance to shopping centers
+mkad_km,Distance to MKAD (Moscow Circle Auto Road),office_km,Distance to business centers/ offices
+ttk_km,Distance to the TTC (Third Transport Ring),additional_education_km,Distance to additional education
+sadovoe_km,Distance to the Garden Ring,preschool_km,Distance to preschool education organizations
+bulvar_ring_km,The distance to the Boulevard Ring,big_church_km,Distance to large church
+kremlin_km,Distance to the city center (Kremlin),church_synagogue_km,Distance to Christian chirches and Synagogues
+big_road1_km,Distance to Nearest major road,mosque_km,Distance to mosques
+ID_big_road1,Nearest big road id,theater_km,Distance to theater
+big_road1_1line,"First line to the road (100 m for highwys, 250 m to MKAD)",museum_km,Distance to museums
+big_road2_km,The distance to next distant major road,exhibition_km,Distance to exhibition
+ID_big_road2,2nd nearest big road id,catering_km,Distance to catering
+railroad_km,Distance to the railway / Moscow Central Ring / open areas Underground,ecology,Ecological zone where the house is located
+railroad_1line,First line to the railway (100 m),green_part_500,The share of green zones in 500 meters zone
+zd_vokzaly_avto_km,Distance to train station,prom_part_500,The share of industrial zones in 500 meters zone
+ID_railroad_terminal,Nearest railroad terminal id,office_count_500,The number of office space in 500 meters zone
+bus_terminal_avto_km,Distance to bus terminal (avto),office_sqm_500,The square of office space in 500 meters zone
+ID_bus_terminal,Nearest bus terminal id,trc_count_500,The number of shopping malls in 500 meters zone
+oil_chemistry_km,Distance to dirty industries,trc_sqm_500,The square of shopping malls in 500 meters zone
+nuclear_reactor_km,Distance to nuclear reactor,cafe_count_500,The number of cafes or restaurants in 500 meters zone
+radiation_km,Distance to burial of radioactive waste,cafe_sum_500_min_price_avg,Cafes and restaurant min average bill in 500 meters zone
+power_transmission_line_km,Distance to power transmission line,cafe_sum_500_max_price_avg,Cafes and restaurant max average bill in 500 meters zone
+thermal_power_plant_km,Distance to thermal power plant,cafe_avg_price_500,Cafes and restaurant average bill in 500 meters zone
+ts_km,Distance to power station,cafe_count_500_na_price,Cafes and restaurant bill N/A in 500 meters zone
+big_market_km,Distance to grocery / wholesale markets,cafe_count_500_price_500,"Cafes and restaurant bill, average under 500 in 500 meters zone"
+market_shop_km,Distance to markets and department stores,cafe_count_500_price_1000,"Cafes and restaurant bill, average  500-1000 in 500 meters zone"
+fitness_km,Distance to fitness,cafe_count_500_price_1500,"Cafes and restaurant bill, average  1000-1500 in 500 meters zone"
+swim_pool_km,Distance to swimming pool,cafe_count_500_price_2500,"Cafes and restaurant bill, average  1500-2500 in 500 meters zone"
+ice_rink_km,Distance to ice palace,cafe_count_500_price_4000,"Cafes and restaurant bill, average  2500-4000 in 500 meters zone"
+stadium_km,Distance to stadium,cafe_count_500_price_high,"Cafes and restaurant bill, average  over 4000 in 500 meters zone"
+basketball_km,Distance to the basketball courts,big_church_count_500,The number of big churchs in 500 meters zone
+hospice_morgue_km,Distance to hospice/morgue,church_count_500,The number of churchs in 500 meters zone
+detention_facility_km,Distance to detention facility,mosque_count_500,The number of mosques in 500 meters zone
+public_healthcare_km,Distance to public healthcare,leisure_count_500,The number of leisure facilities in 500 meters zone
+university_km,Distance to universities,sport_count_500,The number of sport facilities in 500 meters zone
+workplaces_km,Distance to workplaces,market_count_500,The number of markets in 500 meters zone
+shopping_centers_km,Distance to shopping centers,green_part_1000,The share of green zones in 1000 meters zone
+office_km,Distance to business centers/ offices,prom_part_1000,The share of industrial zones in 1000 meters zone
+additional_education_km,Distance to additional education,office_count_1000,The number of office space in 1000 meters zone
+preschool_km,Distance to preschool education organizations,office_sqm_1000,The square of office space in 1000 meters zone
+big_church_km,Distance to large church,trc_count_1000,The number of shopping malls in 1000 meters zone
+church_synagogue_km,Distance to Christian chirches and Synagogues,trc_sqm_1000,The square of shopping malls in 1000 meters zone
+mosque_km,Distance to mosques,cafe_count_1000,The number of cafes or restaurants in 1000 meters zone
+theater_km,Distance to theater,cafe_sum_1000_min_price_avg,Cafes and restaurant min average bill in 1000 meters zone
+museum_km,Distance to museums,cafe_sum_1000_max_price_avg,Cafes and restaurant max average bill in 1000 meters zone
+exhibition_km,Distance to exhibition,cafe_avg_price_1000,Cafes and restaurant average bill in 1000 meters zone
+catering_km,Distance to catering,cafe_count_1000_na_price,Cafes and restaurant bill N/A in 1000 meters zone
+ecology,Ecological zone where the house is located,cafe_count_1000_price_500,"Cafes and restaurant bill, average under 500 in 1000 meters zone"
+green_part_500,The share of green zones in 500 meters zone,cafe_count_1000_price_1000,"Cafes and restaurant bill, average  500-1000 in 1000 meters zone"
+prom_part_500,The share of industrial zones in 500 meters zone,cafe_count_1000_price_1500,"Cafes and restaurant bill, average  1000-1500 in 1000 meters zone"
+office_count_500,The number of office space in 500 meters zone,cafe_count_1000_price_2500,"Cafes and restaurant bill, average  1500-2500 in 1000 meters zone"
+office_sqm_500,The square of office space in 500 meters zone,cafe_count_1000_price_4000,"Cafes and restaurant bill, average  2500-4000 in 1000 meters zone"
+trc_count_500,The number of shopping malls in 500 meters zone,cafe_count_1000_price_high,"Cafes and restaurant bill, average  over 4000 in 1000 meters zone"
+trc_sqm_500,The square of shopping malls in 500 meters zone,big_church_count_1000,The number of big churchs in 1000 meters zone
+cafe_count_500,The number of cafes or restaurants in 500 meters zone,church_count_1000,The number of churchs in 1000 meters zone
+cafe_sum_500_min_price_avg,Cafes and restaurant min average bill in 500 meters zone,mosque_count_1000,The number of mosques in 1000 meters zone
+cafe_sum_500_max_price_avg,Cafes and restaurant max average bill in 500 meters zone,leisure_count_1000,The number of leisure facilities in 1000 meters zone
+cafe_avg_price_500,Cafes and restaurant average bill in 500 meters zone,sport_count_1000,The number of sport facilities in 1000 meters zone
+cafe_count_500_na_price,Cafes and restaurant bill N/A in 500 meters zone,market_count_1000,The number of markets in 1000 meters zone
+cafe_count_500_price_500,"Cafes and restaurant bill, average under 500 in 500 meters zone",green_part_1500,The share of green zones in 1500 meters zone
+cafe_count_500_price_1000,"Cafes and restaurant bill, average  500-1000 in 500 meters zone",prom_part_1500,The share of industrial zones in 1500 meters zone
+cafe_count_500_price_1500,"Cafes and restaurant bill, average  1000-1500 in 500 meters zone",office_count_1500,The number of office space in 1500 meters zone
+cafe_count_500_price_2500,"Cafes and restaurant bill, average  1500-2500 in 500 meters zone",office_sqm_1500,The square of office space in 1500 meters zone
+cafe_count_500_price_4000,"Cafes and restaurant bill, average  2500-4000 in 500 meters zone",trc_count_1500,The number of shopping malls in 1500 meters zone
+cafe_count_500_price_high,"Cafes and restaurant bill, average  over 4000 in 500 meters zone",trc_sqm_1500,The square of shopping malls in 1500 meters zone
+big_church_count_500,The number of big churchs in 500 meters zone,cafe_count_1500,The number of cafes or restaurants in 1500 meters zone
+church_count_500,The number of churchs in 500 meters zone,cafe_sum_1500_min_price_avg,Cafes and restaurant min average bill in 1500 meters zone
+mosque_count_500,The number of mosques in 500 meters zone,cafe_sum_1500_max_price_avg,Cafes and restaurant max average bill in 1500 meters zone
+leisure_count_500,The number of leisure facilities in 500 meters zone,cafe_avg_price_1500,Cafes and restaurant average bill in 1500 meters zone
+sport_count_500,The number of sport facilities in 500 meters zone,cafe_count_1500_na_price,Cafes and restaurant bill N/A in 1500 meters zone
+market_count_500,The number of markets in 500 meters zone,cafe_count_1500_price_500,"Cafes and restaurant bill, average under 500 in 1500 meters zone"
+green_part_1000,The share of green zones in 1000 meters zone,cafe_count_1500_price_1000,"Cafes and restaurant bill, average  500-1000 in 1500 meters zone"
+prom_part_1000,The share of industrial zones in 1000 meters zone,cafe_count_1500_price_1500,"Cafes and restaurant bill, average  1000-1500 in 1500 meters zone"
+office_count_1000,The number of office space in 1000 meters zone,cafe_count_1500_price_2500,"Cafes and restaurant bill, average  1500-2500 in 1500 meters zone"
+office_sqm_1000,The square of office space in 1000 meters zone,cafe_count_1500_price_4000,"Cafes and restaurant bill, average  2500-4000 in 1500 meters zone"
+trc_count_1000,The number of shopping malls in 1000 meters zone,cafe_count_1500_price_high,"Cafes and restaurant bill, average  over 4000 in 1500 meters zone"
+trc_sqm_1000,The square of shopping malls in 1000 meters zone,big_church_count_1500,The number of big churchs in 1500 meters zone
+cafe_count_1000,The number of cafes or restaurants in 1000 meters zone,church_count_1500,The number of churchs in 1500 meters zone
+cafe_sum_1000_min_price_avg,Cafes and restaurant min average bill in 1000 meters zone,mosque_count_1500,The number of mosques in 1500 meters zone
+cafe_sum_1000_max_price_avg,Cafes and restaurant max average bill in 1000 meters zone,leisure_count_1500,The number of leisure facilities in 1500 meters zone
+cafe_avg_price_1000,Cafes and restaurant average bill in 1000 meters zone,sport_count_1500,The number of sport facilities in 1500 meters zone
+cafe_count_1000_na_price,Cafes and restaurant bill N/A in 1000 meters zone,market_count_1500,The number of markets in 1500 meters zone
+cafe_count_1000_price_500,"Cafes and restaurant bill, average under 500 in 1000 meters zone",green_part_2000,The share of green zones in 2000 meters zone
+cafe_count_1000_price_1000,"Cafes and restaurant bill, average  500-1000 in 1000 meters zone",prom_part_2000,The share of industrial zones in 2000 meters zone
+cafe_count_1000_price_1500,"Cafes and restaurant bill, average  1000-1500 in 1000 meters zone",office_count_2000,The number of office space in 2000 meters zone
+cafe_count_1000_price_2500,"Cafes and restaurant bill, average  1500-2500 in 1000 meters zone",office_sqm_2000,The square of office space in 2000 meters zone
+cafe_count_1000_price_4000,"Cafes and restaurant bill, average  2500-4000 in 1000 meters zone",trc_count_2000,The number of shopping malls in 2000 meters zone
+cafe_count_1000_price_high,"Cafes and restaurant bill, average  over 4000 in 1000 meters zone",trc_sqm_2000,The square of shopping malls in 2000 meters zone
+big_church_count_1000,The number of big churchs in 1000 meters zone,cafe_count_2000,The number of cafes or restaurants in 1500 meters zone
+church_count_1000,The number of churchs in 1000 meters zone,cafe_sum_2000_min_price_avg,Cafes and restaurant min average bill in 2000 meters zone
+mosque_count_1000,The number of mosques in 1000 meters zone,cafe_sum_2000_max_price_avg, Cafes and restaurant max average bill in 2000 meters zone
+leisure_count_1000,The number of leisure facilities in 1000 meters zone,cafe_avg_price_2000,Cafes and restaurant average bill in 2000 meters zone
+sport_count_1000,The number of sport facilities in 1000 meters zone,cafe_count_2000_na_price,Cafes and restaurant bill N/A in 2000 meters zone
+market_count_1000,The number of markets in 1000 meters zone,cafe_count_2000_price_500,"Cafes and restaurant bill, average under 500 in 2000 meters zone"
+green_part_1500,The share of green zones in 1500 meters zone,cafe_count_2000_price_1000,"Cafes and restaurant bill, average  500-1000 in 2000 meters zone"
+prom_part_1500,The share of industrial zones in 1500 meters zone,cafe_count_2000_price_1500,"Cafes and restaurant bill, average  1000-1500 in 2000 meters zone"
+office_count_1500,The number of office space in 1500 meters zone,cafe_count_2000_price_2500,"Cafes and restaurant bill, average  1500-2500 in 2000 meters zone"
+office_sqm_1500,The square of office space in 1500 meters zone,cafe_count_2000_price_4000,"Cafes and restaurant bill, average  2500-4000 in 2000 meters zone"
+trc_count_1500,The number of shopping malls in 1500 meters zone,cafe_count_2000_price_high,"Cafes and restaurant bill, average  over 4000 in 2000 meters zone"
+trc_sqm_1500,The square of shopping malls in 1500 meters zone,big_church_count_2000,The number of big churchs in 2000 meters zone
+cafe_count_1500,The number of cafes or restaurants in 1500 meters zone,church_count_2000,The number of churchs in 2000 meters zone
+cafe_sum_1500_min_price_avg,Cafes and restaurant min average bill in 1500 meters zone,mosque_count_2000,The number of mosques in 2000 meters zone
+cafe_sum_1500_max_price_avg,Cafes and restaurant max average bill in 1500 meters zone,leisure_count_2000,The number of leisure facilities in 2000 meters zone
+cafe_avg_price_1500,Cafes and restaurant average bill in 1500 meters zone,sport_count_2000,The number of sport facilities in 2000 meters zone
+cafe_count_1500_na_price,Cafes and restaurant bill N/A in 1500 meters zone,market_count_2000,The number of markets in 2000 meters zone
+cafe_count_1500_price_500,"Cafes and restaurant bill, average under 500 in 1500 meters zone",green_part_3000,The share of green zones in 3000 meters zone
+cafe_count_1500_price_1000,"Cafes and restaurant bill, average  500-1000 in 1500 meters zone",prom_part_3000,The share of industrial zones in 3000 meters zone
+cafe_count_1500_price_1500,"Cafes and restaurant bill, average  1000-1500 in 1500 meters zone",office_count_3000,The number of office space in 3000 meters zone
+cafe_count_1500_price_2500,"Cafes and restaurant bill, average  1500-2500 in 1500 meters zone",office_sqm_3000,The square of office space in 3000 meters zone
+cafe_count_1500_price_4000,"Cafes and restaurant bill, average  2500-4000 in 1500 meters zone",trc_count_3000,The number of shopping malls in 3000 meters zone
+cafe_count_1500_price_high,"Cafes and restaurant bill, average  over 4000 in 1500 meters zone",trc_sqm_3000,The square of shopping malls in 3000 meters zone
+big_church_count_1500,The number of big churchs in 1500 meters zone,cafe_count_3000,The number of cafes or restaurants in 1500 meters zone
+church_count_1500,The number of churchs in 1500 meters zone,cafe_sum_3000_min_price_avg,Cafes and restaurant min average bill in 3000 meters zone
+mosque_count_1500,The number of mosques in 1500 meters zone,cafe_sum_3000_max_price_avg,Cafes and restaurant max average bill in 3000 meters zone
+leisure_count_1500,The number of leisure facilities in 1500 meters zone,cafe_avg_price_3000,Cafes and restaurant average bill in 3000 meters zone
+sport_count_1500,The number of sport facilities in 1500 meters zone,cafe_count_3000_na_price,Cafes and restaurant bill N/A in 3000 meters zone
+market_count_1500,The number of markets in 1500 meters zone,cafe_count_3000_price_500,"Cafes and restaurant bill, average under 500 in 3000 meters zone"
+green_part_2000,The share of green zones in 2000 meters zone,cafe_count_3000_price_1000,"Cafes and restaurant bill, average  500-1000 in 3000 meters zone"
+prom_part_2000,The share of industrial zones in 2000 meters zone,cafe_count_3000_price_1500,"Cafes and restaurant bill, average  1000-1500 in 3000 meters zone"
+office_count_2000,The number of office space in 2000 meters zone,cafe_count_3000_price_2500,"Cafes and restaurant bill, average  1500-2500 in 3000 meters zone"
+office_sqm_2000,The square of office space in 2000 meters zone,cafe_count_3000_price_4000,"Cafes and restaurant bill, average  2500-4000 in 3000 meters zone"
+trc_count_2000,The number of shopping malls in 2000 meters zone,cafe_count_3000_price_high,"Cafes and restaurant bill, average  over 4000 in 3000 meters zone"
+trc_sqm_2000,The square of shopping malls in 2000 meters zone,big_church_count_3000,The number of big churchs in 3000 meters zone
+cafe_count_2000,The number of cafes or restaurants in 1500 meters zone,church_count_3000,The number of churchs in 3000 meters zone
+cafe_sum_2000_min_price_avg,Cafes and restaurant min average bill in 2000 meters zone,mosque_count_3000,The number of mosques in 3000 meters zone
+cafe_sum_2000_max_price_avg, Cafes and restaurant max average bill in 2000 meters zone,leisure_count_3000,The number of leisure facilities in 3000 meters zone
+cafe_avg_price_2000,Cafes and restaurant average bill in 2000 meters zone,sport_count_3000,The number of sport facilities in 3000 meters zone
+cafe_count_2000_na_price,Cafes and restaurant bill N/A in 2000 meters zone,market_count_3000,The number of markets in 3000 meters zone
+cafe_count_2000_price_500,"Cafes and restaurant bill, average under 500 in 2000 meters zone",green_part_5000,The share of green zones in 5000 meters zone
+cafe_count_2000_price_1000,"Cafes and restaurant bill, average  500-1000 in 2000 meters zone",prom_part_5000,The share of industrial zones in 5000 meters zone
+cafe_count_2000_price_1500,"Cafes and restaurant bill, average  1000-1500 in 2000 meters zone",office_count_5000,The number of office space in 5000 meters zone
+cafe_count_2000_price_2500,"Cafes and restaurant bill, average  1500-2500 in 2000 meters zone",office_sqm_5000,The square of office space in 5000 meters zone
+cafe_count_2000_price_4000,"Cafes and restaurant bill, average  2500-4000 in 2000 meters zone",trc_count_5000,The number of shopping malls in 5000 meters zone
+cafe_count_2000_price_high,"Cafes and restaurant bill, average  over 4000 in 2000 meters zone",trc_sqm_5000,The square of shopping malls in 5000 meters zone
+big_church_count_2000,The number of big churchs in 2000 meters zone,cafe_count_5000,The number of cafes or restaurants in 1500 meters zone
+church_count_2000,The number of churchs in 2000 meters zone,cafe_sum_5000_min_price_avg,Cafes and restaurant min average bill in 5000 meters zone
+mosque_count_2000,The number of mosques in 2000 meters zone,cafe_sum_5000_max_price_avg,Cafes and restaurant max average bill in 5000 meters zone
+leisure_count_2000,The number of leisure facilities in 2000 meters zone,cafe_avg_price_5000,Cafes and restaurant average bill in 5000 meters zone
+sport_count_2000,The number of sport facilities in 2000 meters zone,cafe_count_5000_na_price,Cafes and restaurant bill N/A in 5000 meters zone
+market_count_2000,The number of markets in 2000 meters zone,cafe_count_5000_price_500,"Cafes and restaurant bill, average under 500 in 5000 meters zone"
+green_part_3000,The share of green zones in 3000 meters zone,cafe_count_5000_price_1000,"Cafes and restaurant bill, average  500-1000 in 5000 meters zone"
+prom_part_3000,The share of industrial zones in 3000 meters zone,cafe_count_5000_price_1500,"Cafes and restaurant bill, average  1000-1500 in 5000 meters zone"
+office_count_3000,The number of office space in 3000 meters zone,cafe_count_5000_price_2500,"Cafes and restaurant bill, average  1500-2500 in 5000 meters zone"
+office_sqm_3000,The square of office space in 3000 meters zone,cafe_count_5000_price_4000,"Cafes and restaurant bill, average  2500-4000 in 5000 meters zone"
+trc_count_3000,The number of shopping malls in 3000 meters zone,cafe_count_5000_price_high,"Cafes and restaurant bill, average  over 4000 in 5000 meters zone"
+trc_sqm_3000,The square of shopping malls in 3000 meters zone,big_church_count_5000,The number of big churchs in 5000 meters zone
+cafe_count_3000,The number of cafes or restaurants in 1500 meters zone,church_count_5000,The number of churchs in 5000 meters zone
+cafe_sum_3000_min_price_avg,Cafes and restaurant min average bill in 3000 meters zone,mosque_count_5000,The number of mosques in 5000 meters zone
+cafe_sum_3000_max_price_avg,Cafes and restaurant max average bill in 3000 meters zone,leisure_count_5000,The number of leisure facilities in 5000 meters zone
+cafe_avg_price_3000,Cafes and restaurant average bill in 3000 meters zone,sport_count_5000,The number of sport facilities in 5000 meters zone
+cafe_count_3000_na_price,Cafes and restaurant bill N/A in 3000 meters zone,market_count_5000,The number of markets in 5000 meters zone
+cafe_count_3000_price_500,"Cafes and restaurant bill, average under 500 in 3000 meters zone",price_doc, sale price (this is the target variable)
+cafe_count_3000_price_1000,"Cafes and restaurant bill, average  500-1000 in 3000 meters zone",,#N/D
+cafe_count_3000_price_1500,"Cafes and restaurant bill, average  1000-1500 in 3000 meters zone",,#N/D
+cafe_count_3000_price_2500,"Cafes and restaurant bill, average  1500-2500 in 3000 meters zone",,#N/D
+cafe_count_3000_price_4000,"Cafes and restaurant bill, average  2500-4000 in 3000 meters zone",,#N/D
+cafe_count_3000_price_high,"Cafes and restaurant bill, average  over 4000 in 3000 meters zone",,#N/D
+big_church_count_3000,The number of big churchs in 3000 meters zone,,#N/D
+church_count_3000,The number of churchs in 3000 meters zone,,#N/D
+mosque_count_3000,The number of mosques in 3000 meters zone,,#N/D
+leisure_count_3000,The number of leisure facilities in 3000 meters zone,,#N/D
+sport_count_3000,The number of sport facilities in 3000 meters zone,,#N/D
+market_count_3000,The number of markets in 3000 meters zone,,#N/D
+green_part_5000,The share of green zones in 5000 meters zone,,#N/D
+prom_part_5000,The share of industrial zones in 5000 meters zone,,#N/D
+office_count_5000,The number of office space in 5000 meters zone,,#N/D
+office_sqm_5000,The square of office space in 5000 meters zone,,#N/D
+trc_count_5000,The number of shopping malls in 5000 meters zone,,#N/D
+trc_sqm_5000,The square of shopping malls in 5000 meters zone,,#N/D
+cafe_count_5000,The number of cafes or restaurants in 1500 meters zone,,#N/D
+cafe_sum_5000_min_price_avg,Cafes and restaurant min average bill in 5000 meters zone,,#N/D
+cafe_sum_5000_max_price_avg,Cafes and restaurant max average bill in 5000 meters zone,,#N/D
+cafe_avg_price_5000,Cafes and restaurant average bill in 5000 meters zone,,#N/D
+cafe_count_5000_na_price,Cafes and restaurant bill N/A in 5000 meters zone,,#N/D
+cafe_count_5000_price_500,"Cafes and restaurant bill, average under 500 in 5000 meters zone",,#N/D
+cafe_count_5000_price_1000,"Cafes and restaurant bill, average  500-1000 in 5000 meters zone",,#N/D
+cafe_count_5000_price_1500,"Cafes and restaurant bill, average  1000-1500 in 5000 meters zone",,#N/D
+cafe_count_5000_price_2500,"Cafes and restaurant bill, average  1500-2500 in 5000 meters zone",,#N/D
+cafe_count_5000_price_4000,"Cafes and restaurant bill, average  2500-4000 in 5000 meters zone",,#N/D
+cafe_count_5000_price_high,"Cafes and restaurant bill, average  over 4000 in 5000 meters zone",,#N/D
+big_church_count_5000,The number of big churchs in 5000 meters zone,,#N/D
+church_count_5000,The number of churchs in 5000 meters zone,,#N/D
+mosque_count_5000,The number of mosques in 5000 meters zone,,#N/D
+leisure_count_5000,The number of leisure facilities in 5000 meters zone,,#N/D
+sport_count_5000,The number of sport facilities in 5000 meters zone,,#N/D
+market_count_5000,The number of markets in 5000 meters zone,,#N/D
